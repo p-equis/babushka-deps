@@ -1,9 +1,9 @@
 
-dep 'VirtualBox.bin' do
+dep 'VirtualBox.app' do
 	source 'http://download.virtualbox.org/virtualbox/4.3.10/VirtualBox-4.3.10-93012-OSX.dmg'
 end
 
-dep 'vagrant.bin' do
-	requires 'VirtualBox.bin'
+dep 'vagrant.app' do
+	requires 'VirtualBox.app'
 	source 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.5.2.dmg'
 end
