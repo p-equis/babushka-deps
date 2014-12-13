@@ -5,5 +5,5 @@ end
 
 dep 'vagrant.app' do
 	requires 'VirtualBox.app'
-	source 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.5.2.dmg'
+	source 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.1.dmg'
 end
