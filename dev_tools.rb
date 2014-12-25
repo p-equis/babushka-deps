@@ -3,6 +3,7 @@ dep 'dev tools' do
   requires 'haskell platform'
   requires 'android-sdk.bin'
   requires 'IntelliJ IDEA 14.app'
+  requires 'android dev setup'
 end
 
 dep 'haskell platform', :template => 'installer' do
