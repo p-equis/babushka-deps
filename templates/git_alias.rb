@@ -6,7 +6,7 @@ meta :git_alias do
    requires 'git.bin'
 
     met? {
-      raw_shell("git config --global --list").stdout.lines.grep(Regexp.new("alias.#{short_form}")).any?  
+      raw_shell("git config --global --list").stdout.lines.grep(Regexp.new("alias.#{short_form}=")).any?  
     }
 
     meet {
