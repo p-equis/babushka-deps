@@ -1,9 +1,14 @@
 
-dep 'VirtualBox.app' do
-	source 'http://download.virtualbox.org/virtualbox/4.3.10/VirtualBox-4.3.10-93012-OSX.dmg'
+dep 'virtualbox.bin' do
+  meet {
+    shell! "brew cask install virtualbox"
+  }
 end
 
-dep 'vagrant.app' do
-	requires 'VirtualBox.app'
-	source 'https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.1.dmg'
+dep 'vagrant.bin' do
+  requires 'virtualbox.bin'
+
+  meet {
+    shell! "brew cask install vagrant"
+  }
 end
