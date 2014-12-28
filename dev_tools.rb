@@ -5,5 +5,6 @@ dep 'dev tools' do
   requires 'IntelliJ IDEA 14.app'
   requires 'android dev setup'
   requires 'vagrant.bin'
+  requires 'git aliases'
 end
 
