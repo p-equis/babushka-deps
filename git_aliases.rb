@@ -1,22 +1,17 @@
 dep 'git aliases' do
-  requires 'amend.git_alias'
-  requires 'st.git_alias'
-  requires 'lg.git_alias'
-  requires 'co.git_alias'
+  gitAlias('amend', long_form: 'commit --amend')
+  gitAlias('st', long_form: 'status')
+  gitAlias('lg', long_form: 'log --oneline')
+  gitAlias('co', long_form: 'checkout')
 end
 
-dep 'amend.git_alias' do
-  long_form 'commit --amend'
+def gitAlias(short_form, long_form)
+  newDep = "#{short_form}.git_alias"
+
+  dep newDep do 
+    long_form long_form 
+  end
+
+  requires newDep
 end
 
-dep 'st.git_alias' do
-  long_form 'status'
-end
-
-dep 'lg.git_alias' do
-  long_form 'log --oneline'
-end
-
-dep 'co.git_alias' do
-  long_form 'checkout'
-end
