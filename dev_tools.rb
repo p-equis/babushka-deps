@@ -6,5 +6,6 @@ dep 'dev tools' do
   requires 'android dev setup'
   requires 'vagrant.bin'
   requires 'git aliases'
+  requires 'bash aliases'
 end
 
