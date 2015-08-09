@@ -7,6 +7,7 @@ dep 'dev tools' do
   requires 'android dev setup'
   requires 'cocoapods.gem'
   requires 'vagrant.bin'
+  requires 'vagrant sandbox'
   requires 'git aliases'
   requires 'bash aliases'
 end
