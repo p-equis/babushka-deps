@@ -10,5 +10,6 @@ dep 'dev tools' do
   requires 'vagrant sandbox'
   requires 'git aliases'
   requires 'bash aliases'
+  requires 'mono'
 end
 
