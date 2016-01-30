@@ -1,5 +1,7 @@
 dep 'dev tools' do
+  requires 'heroku'
   requires 'nodejs.bin'
+  requires 'nvm'
   requires 'clisp.bin'
   requires 'haskell platform'
   requires 'android-sdk.bin'
