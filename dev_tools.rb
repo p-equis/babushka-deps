@@ -1,4 +1,5 @@
 dep 'dev tools' do
+  requires 'iterm'
   requires 'heroku'
   requires 'nodejs.bin'
   requires 'nvm'
