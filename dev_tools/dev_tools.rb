@@ -1,8 +1,7 @@
 dep 'dev tools' do
   requires 'iterm'
   requires 'heroku'
-  requires 'nodejs.bin'
-  requires 'nvm'
+  requires 'nodejs'
   requires 'clisp.bin'
   requires 'haskell platform'
   requires 'android-sdk.bin'
