@@ -11,7 +11,7 @@ dep 'dev tools' do
   requires 'cocoapods.gem'
   requires 'vagrant.bin'
   requires 'vagrant sandbox'
-  requires 'git aliases'
+  requires 'git'
   requires 'bash aliases'
   requires 'mono'
 end
