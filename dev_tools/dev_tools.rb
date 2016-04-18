@@ -1,4 +1,5 @@
 dep 'dev tools' do
+  requires 'docker'
   requires 'iterm'
   requires 'heroku'
   requires 'nodejs'
