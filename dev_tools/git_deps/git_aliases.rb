@@ -4,6 +4,7 @@ dep 'git aliases' do
   requires 'lg.git_alias'
   requires 'co.git_alias'
   requires 'ci.git_alias' # commit incremental change
+  requires 'cpa.git_alias' # cherry-pick-all to master from a given branch 
 end
 
 dep 'amend.git_alias' do
@@ -24,4 +25,8 @@ end
 
 dep 'ci.git_alias' do
   long_form 'commit --amend --reuse-message=HEAD'
+end
+
+dep 'cpa.git_alias' do
+  long_form '!git log master..$1 --pretty="%h" | tail -r | xargs git cherry-pick' 
 end
