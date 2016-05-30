@@ -14,5 +14,6 @@ dep 'dev tools' do
   requires 'git'
   requires 'bash aliases'
   requires 'mono'
+  requires 'jq.bin'
 end
 
