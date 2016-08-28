@@ -1,4 +1,5 @@
 dep 'dev tools' do
+  requires 'python.bin'
   requires 'docker'
   requires 'iterm'
   requires 'heroku'
