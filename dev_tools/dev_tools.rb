@@ -1,4 +1,5 @@
 dep 'dev tools' do
+  requires 'visual studio code'
   requires 'python.bin'
   requires 'docker'
   requires 'iterm'
