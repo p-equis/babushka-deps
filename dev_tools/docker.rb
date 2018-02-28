@@ -4,6 +4,6 @@ end
 
 dep 'docker.bin' do
   meet {
-    shell('brew cask install dockertoolbox')
+    shell('brew cask install docker-toolbox')
   }
 end
